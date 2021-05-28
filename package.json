@@ -1,5 +1,5 @@
 {
-  "name": "tommys-blog",
+  "name": "MiniDevs 2021Q2",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -12,7 +12,6 @@
     "url": "git+https://github.com/codesandbox-app/static-template.git"
   },
   "keywords": [],
-  "author": "Ives van Hoorne",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/codesandbox-app/static-template/issues"
