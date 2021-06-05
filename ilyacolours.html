@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ilyas boring page</title>
+  </head>
+  <body>
+    <div>
+      <h1>Ilya's boring page</h1>
+      <button>The boring button</button>
+      <h2>Colour</h2>
+    </div>
+
+    <script>
+      let faveCol = ["DarkCyan", "FireBrick", "DarkSlateGrey"];
+
+      let body = document.querySelector("body");
+      let myButton = document.querySelector("button");
+      let myColour = document.querySelector("h2");
+
+      myButton.addEventListener("click", function () {
+        let chosenColour = faveCol[Math.floor(Math.random() * faveCol.length)];
+
+        body.style.background = chosenColour;
+        myColour.textContent = chosenColour;
+      });
+      g;
+    </script>
+  </body>
+</html>

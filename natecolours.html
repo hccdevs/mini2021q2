@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>(..............................)</title>
+  </head>
+  <body>
+    <div>
+      <h1>
+        :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      </h1>
+      <button>THESHEESH</button>
+      <h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
+        minima accusamus eaque totam repudiandae officiis ipsa ut cupiditate
+        veniam dignissimos, a quam, quibusdam, maxime culpa quis eveniet rerum
+        nemo exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Numquam quam excepturi ipsum dignissimos deserunt consectetur
+        similique, quisquam tempore nisi obcaecati sapiente, necessitatibus
+        voluptatem sit tenetur repellat quo commodi consequuntur pariatur.
+      </h2>
+    </div>
+
+    <script>
+      let faveColours = [
+        "#F0F8FF",
+        "#4682B4",
+        "#708090",
+        "#000080",
+        "#FAEBD7",
+        "#F5F5DC",
+        "#000000",
+        "#D2691E"
+      ];
+
+      let body = document.querySelector("body");
+      let myButton = document.querySelector("button");
+      let myColour = document.querySelector("h2");
+
+      myButton.addEventListener("click", function () {
+        let chosenColour =
+          faveColours[Math.floor(Math.random() * faveColours.length)];
+
+        body.style.background = chosenColour;
+        myColour.textContent = chosenColour;
+      });
+    </script>
+  </body>
+</html>

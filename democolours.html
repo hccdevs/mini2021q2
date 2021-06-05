@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <!-- HTML Template -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Page Title -->
+    <title>Tommy's Favourite Colours</title>
+
+    <!-- Styling -->
+    <style>
+      /* Start of CSS */
+
+      /* End of CSS */
+    </style>
+  </head>
+
+  <body>
+    <!-- Start of the HTML body -->
+
+    <!-- Link back to home page -->
+    <div>
+      <a href="../index.html">🔙 Home</a>
+    </div>
+
+    <div class="container">
+      <!-- Page heading -->
+      <h1>Tommy's Favourite Colours</h1>
+
+      <!-- Button to change colour -->
+      <button class="btn">My Colours</button>
+
+      <!-- Name of colour -->
+      <h2 class="colour">Colour will go here</h2>
+    </div>
+
+    <!-- End of the HTML body -->
+
+    <script>
+      /* =================================== */
+      /*      Start    of    JavaScript      */
+      /* =================================== */
+
+      // List of colours
+      let colours = [
+        "green",
+        "blue",
+        "hotpink",
+        "orange",
+        "red",
+        "purple",
+        "gold"
+      ];
+
+      // Query Selectors
+      let body = document.querySelector("body");
+      let myColoursBtn = document.querySelector("button");
+      let colourName = document.querySelector("h2");
+
+      // When myColoursBtn is clicked
+      myColoursBtn.addEventListener("click", function () {
+        // make my selectedColour a random colour
+        let selectedColour =
+          colours[Math.floor(Math.random() * colours.length)];
+
+        // Make the background colour that randomly selected colour
+        body.style.background = selectedColour;
+
+        // Make the colourName that randomly selected colour
+        colourName.textContent = selectedColour;
+      });
+
+      /* ================================= */
+      /*      End    of    JavaScript      */
+      /* ==================================*/
+    </script>
+  </body>
+</html>

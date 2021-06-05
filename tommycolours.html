@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tommy's Favourite Colours (InClass)</title>
+  </head>
+  <body>
+    <div>
+      <h1>Tommy's Fave Colours</h1>
+      <button>My Colours</button>
+      <h2>Background Colour</h2>
+    </div>
+
+    <script>
+      let faveColours = ["aliceblue", "antiquewhite", "aqua"];
+
+      let body = document.querySelector("body");
+      let myButton = document.querySelector("button");
+      let myColour = document.querySelector("h2");
+
+      myButton.addEventListener("click", function () {
+        let chosenColour =
+          faveColours[Math.floor(Math.random() * faveColours.length)];
+
+        body.style.background = chosenColour;
+        myColour.textContent = chosenColour;
+      });
+    </script>
+  </body>
+</html>
